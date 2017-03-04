@@ -1,0 +1,65 @@
+.cookie-bar {
+    .unitize(line-height, 30);
+    .unitize-padding(3,0,2,0);
+    border-bottom: 1px solid @scp_colorWhite;
+    background: @scp_cookieBarBackground;
+    color: @scp_colorLightGray;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    z-index: @scp_higher_z_index;
+
+    .bar--paragraph {
+        margin: 0;
+        padding: 0;
+        color: @scp_colorWhite;
+    }
+
+    .cp-btn {
+        .unitize-padding(0,6);
+        .unitize(margin-left, 8);
+        .border-radius(3px);
+        .unitize(height, 24);
+        color: @scp_colorWhite;
+        display: inline-block;
+        text-decoration: none;
+        border: 1px solid @scp_colorWhite;
+        position: relative;
+    }
+
+    .cp-btn:hover {
+        background: @scp_buttonHoverBackground;
+    }
+}
+
+.cookie-overlay {
+    background-color: @scp_colorBlack;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: @scp_lower_z_index;
+    opacity: 0.4;
+}
+
+.cp-yes-icon {
+    background: url(../img/yes.png) no-repeat;
+}
+
+.cp-no-icon {
+    background: url(../img/no.png) no-repeat;
+}
+
+.cp-icon {
+    .unitize(width, 17);
+    .unitize(height, 17);
+    .unitize(top, 4);
+    display: block;
+    position: absolute;
+}
+
+.cp-btn-label {
+    .unitize-margin(0,0,0,22);
+    display: block;
+}
